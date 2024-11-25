@@ -1,9 +1,9 @@
-import './cvApp.css'
+import '../styles/header.css'
 
 export default function Header() {
   return (
     <header>
-      <h1>CV Generatore</h1>
+      <h1>CV Generator</h1>
     </header>
   );
 }
