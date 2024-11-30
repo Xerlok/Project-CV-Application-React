@@ -57,7 +57,7 @@ input {
 
 .wrapper.advert {
   min-height: 250px;
-  background-image: url("imgs/ad.jpg");
+  background-image: url("/imgs/ad.jpg");
   background-size: cover;
 }
 

@@ -16,7 +16,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background-image: url("imgs/city.png");
+  background-image: url("/imgs/city.png");
   background-size: cover;
 }
 
