@@ -23,7 +23,9 @@ form {
   flex-direction: column;
 }
 
-.general-info-cv {
+.general-info-cv,
+.work-cv,
+.education-cv {
   display: flex;
   flex-direction: column;
 }
@@ -46,24 +48,13 @@ input {
   display: table-cell;
 }
 
-.wrapper.general-info {
-
-}
-
-.general-info-form {
-  
-}
-
-.wrapper.education {
-
-}
-
 .wrapper.work-experience {
   grid-column: 2;
   grid-row: 1 / 2;
 }
 
 .wrapper.advert {
+  min-height: 250px;
   background-image: url("imgs/ad.jpg");
   background-size: cover;
 }
@@ -106,4 +97,18 @@ textarea {
   transform: translateY(4px);
   border: none;
   box-shadow: none;
+}
+
+@media (max-width: 428px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem; 
+  }
+
+  .wrapper.advert {
+    background-size: cover;
+    background-position: 90%;
+  }
 }

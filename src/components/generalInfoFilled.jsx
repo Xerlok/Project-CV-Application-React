@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-export default function GeneralInfoFilled({ generalInfo }) {
+export default function GeneralInfoFilled({ generalInfo, setFilled }) {
   const { fName } = generalInfo;
   const { lName } = generalInfo;
   const { email } = generalInfo;
@@ -8,13 +8,13 @@ export default function GeneralInfoFilled({ generalInfo }) {
   return (
     <div className="general-info-cv">
       <ul className="general-info-list">
-        <li>First name: {fName}</li>
-        <li>Last name: {lName}</li>
-        <li>Email: {email}</li>
-        <li>Phone: {phone}</li>
+        <li><strong>First name: </strong>{fName}</li>
+        <li><strong>Last name: </strong>{lName}</li>
+        <li><strong>Email: </strong>{email}</li>
+        <li><strong>Phone: </strong>{phone}</li>
       </ul>
       <div className="buttons-wrapper">
-        <button className="buttons edit">Edit</button>
+        <button type='button' className="buttons edit" onClick={() => setFilled(false)}>Edit</button>
       </div>
     </div>
   );
