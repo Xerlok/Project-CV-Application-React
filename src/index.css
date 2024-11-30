@@ -34,3 +34,8 @@ h2 {
   padding: 0;
 }
 
+@media (min-width: 2560px) {
+  .body-wrapper {
+    font-size: 1vw;
+  }
+}

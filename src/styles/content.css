@@ -17,7 +17,7 @@ main {
   border-radius: 15px 50px;
   box-shadow: inset 0 0px 10px #9c1f34;
   color: rgb(26, 26, 26);
-  min-width: 700px;
+  min-width: 40vw;
 }
 
 form {
@@ -101,7 +101,7 @@ textarea {
   box-shadow: none;
 }
 
-@media (max-width: 428px) {
+@media (max-width: 680px) {
   main {
     display: flex;
     flex-direction: column;
@@ -128,19 +128,22 @@ textarea {
 @media (min-width: 2560px) {
   .wrapper {
     min-width: 30vw;
-    font-size: 2rem;
-  }
-
-  input {
-    font-size: 2rem;
-  }
-
-  textarea {
-    font-size: 2rem;
+    padding: 3rem;
   }
 
   .buttons {
     min-width: 144px;
     min-height: 44px;
+    font-size: 1vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  input {
+    font-size: 1vw;
+  }
+
+  textarea {
+    font-size: 1vw;
   }
 }
