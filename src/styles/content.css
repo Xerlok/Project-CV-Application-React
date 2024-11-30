@@ -1,9 +1,10 @@
 main {
+  flex: 10;
   display: grid;
   gap: 2rem;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  margin: 2rem; 
+  margin: 2rem;
 }
 
 .wrapper {
@@ -16,6 +17,7 @@ main {
   border-radius: 15px 50px;
   box-shadow: inset 0 0px 10px #9c1f34;
   color: rgb(26, 26, 26);
+  min-width: 700px;
 }
 
 form {
@@ -107,8 +109,38 @@ textarea {
     margin: 2rem; 
   }
 
+  .wrapper {
+    min-width: auto;
+  }
+
   .wrapper.advert {
     background-size: cover;
     background-position: 90%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    min-width: auto;
+  }
+}
+
+@media (min-width: 2560px) {
+  .wrapper {
+    min-width: 30vw;
+    font-size: 2rem;
+  }
+
+  input {
+    font-size: 2rem;
+  }
+
+  textarea {
+    font-size: 2rem;
+  }
+
+  .buttons {
+    min-width: 144px;
+    min-height: 44px;
   }
 }

@@ -17,12 +17,15 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-image: url("imgs/city.png");
+  background-size: cover;
 }
 
 .body-wrapper {
   min-height: 100vh;
+  max-width: 100vw;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 h1,
@@ -31,14 +34,3 @@ h2 {
   padding: 0;
 }
 
-header {
-  flex: 0.1;
-}
-
-main {
-  flex: 10;
-}
-
-footer {
-  flex: 0.1;
-}

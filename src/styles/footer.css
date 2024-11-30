@@ -1,6 +1,9 @@
 footer {
+  flex: 0.1;
   display: flex;
   justify-content: center;
   background-color: #1e293be3;
-  padding: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  min-width: 100vw;
 }

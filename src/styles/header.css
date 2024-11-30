@@ -1,4 +1,5 @@
 header {
+  flex: 0.1;
   background-color: #1e293be3;
   min-width: 100vw;
   padding-top: 1rem;

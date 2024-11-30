@@ -229,7 +229,7 @@ function UserInput({ textarea, labelFor, labelText, type, name, id, text }) {
     return (
       <div className="input-wrapper">
           <label htmlFor={labelFor}>{labelText}</label>
-          <textarea name={name} id={id} rows="5" cols="33" maxLength="300" defaultValue={text}></textarea>
+          <textarea name={name} id={id} rows="5" cols="22" maxLength="300" defaultValue={text}></textarea>
       </div>
     );
   }
